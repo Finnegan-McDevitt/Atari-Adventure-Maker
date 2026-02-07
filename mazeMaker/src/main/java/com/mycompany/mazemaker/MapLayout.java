@@ -55,7 +55,7 @@ public class MapLayout {
         num = number;
         Scanner fr = null;
         try {
-            fr = new Scanner(new File(levelPack + "\\Screen" + num)); //file reader
+            fr = new Scanner(new File(levelPack + "/Screen" + num)); //file reader
         } catch (FileNotFoundException ex) {
             Logger.getLogger(MapLayout.class.getName()).log(Level.SEVERE, null, ex);
         }

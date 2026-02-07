@@ -74,7 +74,7 @@ public class MazeCreator extends javax.swing.JFrame {
         jTable1.setDefaultRenderer(Integer.class, new ColorCellRenderer());
         paleteNum = -1;
         packName = "defaultLevel";
-        currentDir = "levels\\defaultLevel";
+        currentDir = "levels/defaultLevel";
         this.setTitle("Maze Creator - " + packName);
 
         buildScreens();
@@ -95,7 +95,7 @@ public class MazeCreator extends javax.swing.JFrame {
         int scrNum = 1;
         for (String[][] str : screens) {
             try {
-                s = new Scanner(new File(currentDir + "\\Screen" + scrNum));
+                s = new Scanner(new File(currentDir + "/Screen" + scrNum));
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(MazeCreator.class.getName()).log(Level.SEVERE, null, ex);
             }
